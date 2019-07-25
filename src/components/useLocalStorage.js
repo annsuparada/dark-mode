@@ -1,4 +1,4 @@
-import React, { useState} from "react"
+import { useState} from "react"
 
 
 export const useLocalStorage = (key, initialValue) => {
@@ -12,6 +12,6 @@ export const useLocalStorage = (key, initialValue) => {
         window.setItem(key, JSON.stringify(value))
     }
 
-    return [storedValue];
+    return [storedValue, setValue];
 }
  
