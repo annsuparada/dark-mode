@@ -16,8 +16,7 @@ const Navbar = () => {
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
       </div>
-    </nav>
-  );
+  </nav> )
 };
 
 export default Navbar;
